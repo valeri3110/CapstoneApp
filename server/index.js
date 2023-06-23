@@ -21,7 +21,7 @@ app.use("/api/v1/properties", propertyRouter);
 
 const startServer = async () => {
     try {
-        connectDB(process.env.MONGODB_URL);
+        connectDB("mongodb+srv://vreshetniak:12345@cluster0.wks2jdl.mongodb.net/?retryWrites=true&w=majority");
 
         app.listen(8080, () =>
             console.log("Server started on port http://localhost:8080"),
